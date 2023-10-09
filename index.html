@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .regstraion_contanier {
+            width: 100%;
+            max-width: 700px;
+            margin: 0;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+
+        .restraion_row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+
+        .restraion_col {
+            display: grid;
+        }
+
+        .restraion_col input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .restraion_col {
+            display: grid;
+            width: calc(100% / 2 - 20px);
+            margin-bottom: 15px;
+        }
+
+        .restraion_col label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .gender__content {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .restraion_col.gender_content {
+            width: 100%;
+        }
+
+        .gender__content input {
+            width: 26px;
+            /* margin-right: 52px; */
+        }
+
+        .gender__content {
+            display: flex;
+            width: 80%;
+            margin: 15px 0;
+            justify-content: space-between;
+        }
+
+        h1.restraion_title {
+            position: relative;
+        }
+
+        h1.restraion_title:after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            background:#9b59b6;
+            height: 4px;
+            width: 3%;
+        }
+
+        .restraion_button button {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            transition: all 0.3s ease;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regstraion_contanier">
+        <form action="#">
+            <h1 class="restraion_title">Registration</h1>
+            <div class="regstraion_contenet">
+                <div class="restraion_row">
+                    <div class="restraion_col">
+                        <label for="FullName">Full Name</label>
+                        <input type="text" placeholder="Saif Ali Khan">
+
+                    </div>
+                    <div class="restraion_col">
+                        <label for="Username">Username</label>
+                        <input type="text" placeholder="system786">
+                    </div>
+                </div>
+                <div class="restraion_row">
+                    <div class="restraion_col">
+                        <label for="">Email</label>
+                        <input type="text" placeholder="happy1234@gmail.com">
+
+                    </div>
+                    <div class="restraion_col">
+                        <label for="Username">Phone Number</label>
+                        <input type="text" placeholder="0123-456-789">
+                    </div>
+                </div>
+                <div class="restraion_row">
+                    <div class="restraion_col">
+                        <label for="Password">Password</label>
+                        <input type="password" placeholder="*********">
+
+                    </div>
+                    <div class="restraion_col">
+                        <label for="Conform Password">Conform Password</label>
+                        <input type="password" placeholder="*********">
+                    </div>
+                </div>
+
+                <div class="restraion_gender_content__">
+                    <div class="restraion_gender_content">
+                        <h2>Gender</h2>
+                        <div class="gender__content">
+                            <span>
+                                <input type="radio" name="gender" value="male"> Male
+                            </span>
+                            <span>
+                                <input type="radio" name="gender" value="female"> Female
+                            </span>
+                            <span>
+                                <input type="radio" name="gender" value="unknown">Prefer not to say
+                            </span>
+                        </div>
+                    </div>
+                    <div class="restraion_button">
+                        <button>Register</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
+
+</html>
